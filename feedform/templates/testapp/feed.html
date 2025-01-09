@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link: rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <title>FEEDFORM</title>
+</head>
+
+<body>
+    <div class='container' align='center'>
+        {% if submitted %}
+        <h1>Thank you {{sname}}for your feedback</h1>
+
+        {% else %}
+
+        <h1>FeedBack Form</h1>
+        <form method='post'>
+            {{form.as_p}}
+            {% csrf_token%}
+            <input type='submit' value='Submit Feedback' name='submit feedback'>
+        </form>
+        {% endif %}
+        <h1>FeedBack Form</h1>
+        <form method='post'>
+            {{form.as_p}}
+            {% csrf_token%}
+            <input type='submit' value='Submit Feedback' name='submit feedback'>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
