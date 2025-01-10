@@ -1,4 +1,4 @@
-
+"""
 # Django Code Repository
 
 This repository contains Python code examples for Django-based web applications. It includes essential components for building dynamic web applications using the Django framework.
@@ -6,7 +6,7 @@ This repository contains Python code examples for Django-based web applications.
 ## Features
 
 - Django-based backend development
-- Integration with databases (e.g., MySQL, SQLite)
+- Integration with databases (MySQL, SQLite)
 - Implementation of models, views, templates, and URLs
 - User authentication and authorization
 
