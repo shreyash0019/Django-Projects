@@ -1,6 +1,4 @@
-# Generate the content of the README file for Django code repository without examples and how-to-run section.
 
-django_readme_content = """
 # Django Code Repository
 
 This repository contains Python code examples for Django-based web applications. It includes essential components for building dynamic web applications using the Django framework.
