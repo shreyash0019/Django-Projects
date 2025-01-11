@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Project Application</title>
+</head>
+<body>
+    <h1>Hello Friend, The server time is: {{ current_time }}</h1>
+    <h2>Course Name: {{ name }}</h2>
+    <h2>Prerequisite: {{ prerequisite }}</h2>
+    <ul>
+        <li>Good to get job very easily</li>
+        <li>Learning is also very easy</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.feedback }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
