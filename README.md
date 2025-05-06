@@ -22,3 +22,5 @@ This repository contains Python code examples for Django-based web applications.
 This repository demonstrates how to build and deploy scalable web applications using Django. It focuses on implementing various functionalities such as user authentication, CRUD operations, and database management with Django ORM.
 
 
+
+
